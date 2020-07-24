@@ -51,3 +51,121 @@ header nav a {
     text-decoration: none;
     color: #2d2d2d;
 }
+
+/** Mosaico **/
+
+.mosaico-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.mosaico-single {
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid white;
+}
+
+.mosaico-single:nth-of-type(1) .img-mosaico-single:first-child {
+    background-image: url('../images/1.jpg');
+}
+
+.mosaico-single:nth-of-type(1) .img-mosaico-single:last-child {
+    background-image: url('../images/2.jpg');
+}
+
+.mosaico-single:nth-of-type(2) .img-mosaico-single:first-child {
+    background-image: url('../images/3.jpg');
+}
+
+.mosaico-single:nth-of-type(2) .img-mosaico-single:last-child {
+    background-image: url('../images/4.jpg');
+}
+
+.mosaico-single:nth-of-type(3) .img-mosaico-single:first-child {
+    background-image: url('../images/5.jpg');
+}
+
+.mosaico-single:nth-of-type(3) .img-mosaico-single:last-child {
+    background-image: url('../images/6.jpg');
+}
+
+.mosaico-single:nth-of-type(4) .img-mosaico-single:first-child {
+    background-image: url('../images/7.jpg');
+}
+
+.mosaico-single:nth-of-type(4) .img-mosaico-single:last-child {
+    background-image: url('../images/8.jpg');
+}
+
+.mosaico-single:nth-of-type(5) .img-mosaico-single:first-child {
+    background-image: url('../images/9.jpg');
+}
+
+.mosaico-single:nth-of-type(5) .img-mosaico-single:last-child {
+    background-image: url('../images/10.jpg');
+}
+
+.mosaico-single:nth-of-type(6) .img-mosaico-single:first-child {
+    background-image: url('../images/11.jpg');
+}
+
+.mosaico-single:nth-of-type(6) .img-mosaico-single:last-child {
+    background-image: url('../images/12.jpg');
+}
+
+/** Serviços **/
+
+section.servicos > .container {
+    max-width: 800px;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+section.servicos .container .box-servico {
+    background-image: url('../images/icone_dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 20px);
+    background-repeat: no-repeat;
+}
+
+section.servicos .container .box-servico:nth-of-type(1) {
+    width: 30%;
+    padding: 30px 1% 50px;
+    background-color: #2897c3;
+}
+
+section.servicos .container .box-servico:nth-of-type(2) {
+    width: 40%;
+    padding: 45px 2%;
+    background-color: #43afda;
+    background-image: none;
+}
+
+section.servicos .container .box-servico:nth-of-type(3) {
+    width: 30%;
+    padding: 30px 1% 50px;
+    background-color: #2897c3;
+}
+
+section.servicos .container .box-servico h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section.servicos .container .box-servico p {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 8px;
+}

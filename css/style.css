@@ -211,11 +211,39 @@ section.perfil-container .texto-perfil p {
     margin-top: 10px;
 }
 
+section.videos {
+    padding: 50px 0;
+}
+
+section.videos .box-video {
+    width: 33.3%;
+    background-color: #eff2f4;
+    padding-top: calc(33.3% * 0.6);
+}
+
 @media screen and (max-width: 768px) {
+    header nav {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        background-image: url('../images/menu-mobile.png');
+        background-size: 100% 100%;
+    }
+
     header nav ul {
-        list-style-type: none;
-        display: flex;
+        display: none;
+        background-color: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
         flex-direction: column;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
     }
 
     section.servicos > .container {

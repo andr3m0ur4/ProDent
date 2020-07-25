@@ -175,6 +175,8 @@ section.servicos .container .box-servico p {
     margin-top: 8px;
 }
 
+/** Perfil **/
+
 section.perfil-container {
     padding: 40px 0;
 }
@@ -216,6 +218,8 @@ section.perfil-container .texto-perfil p {
     margin-top: 10px;
 }
 
+/** Vídeos **/
+
 section.videos {
     margin: 50px 0;
     padding: 10px 0;
@@ -240,6 +244,8 @@ section.videos iframe {
     width: 100%;
     height: 100%;
 }
+
+/** Tratamentos **/
 
 section.tratamentos {
     padding: 70px 0 40px;
@@ -278,6 +284,53 @@ section.tratamentos .tratamento-container {
     padding-top: 10px;
     font-size: 13px;
     color: #696969;
+}
+
+section.depoimentos {
+    margin-top: 70px;
+}
+
+section.depoimentos > h2 {
+    color: #2d2d2d;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.depoimentos .container {
+    padding: 40px 0;
+    max-width: 400px;
+}
+
+section.depoimentos .depoimento-single {
+    text-align: center;
+    width: 100%;
+    padding: 40px 2%;
+    background-color: #eff2f4;
+}
+
+.depoimento-single blockquote {
+    font-size: 15px;
+    color: #696969;
+}
+
+.depoimento-single .nome-depoimento {
+    padding: 8px 0;
+}
+
+.nome-depoimento img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.nome-depoimento span {
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+    color: #2d2d2d;
+    display: inline-block;
+    vertical-align: top;
 }
 
 @media screen and (max-width: 768px) {

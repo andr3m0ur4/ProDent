@@ -36,14 +36,19 @@ header .logo img {
     width: 200px;
 }
 
+header nav {
+    width: 700px;
+}
+
 header nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 40px;
     text-transform: uppercase;
 }
 
@@ -175,7 +180,7 @@ section.perfil-container {
 }
 
 section.perfil-container .container {
-    max-width: 800px;
+    max-width: 900px;
     display: block;
 }
 
@@ -212,13 +217,67 @@ section.perfil-container .texto-perfil p {
 }
 
 section.videos {
-    padding: 50px 0;
+    margin: 50px 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+section.videos .container {
+    max-width: 900px;
 }
 
 section.videos .box-video {
     width: 33.3%;
-    background-color: #eff2f4;
     padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+}
+
+section.videos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.tratamentos {
+    padding: 70px 0 40px;
+    background-color: #eff2f4;
+}
+
+section.tratamentos > h2 {
+    color: #2d2d2d;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.tratamentos .container {
+    max-width: 920px;
+    padding: 50px 0;
+    display: block;
+}
+
+section.tratamentos .tratamento-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tratamento-single {
+    padding: 20px;
+    width: 33.3%;
+}
+
+.tratamento-single h2 {
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+.tratamento-single p {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #696969;
 }
 
 @media screen and (max-width: 768px) {
@@ -290,12 +349,27 @@ section.videos .box-video {
         text-align: center;
         margin-top: 20px;
     }
+
+    section.videos .container {
+        flex-direction: column;
+    }
+
+    section.videos .box-video {
+        align-self: center;
+        width: 70%;
+        padding-top: calc(70% * 0.6);
+    }
 }
 
 @media screen and (max-width: 580px) {
     section.perfil-container .img-perfil {
         width: 60%;
         padding-top: 70%;
+    }
+
+    section.videos .box-video {
+        width: 90%;
+        padding-top: calc(90% * 0.6);
     }
 }
 

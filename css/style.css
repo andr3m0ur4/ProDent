@@ -425,6 +425,114 @@ section.depoimentos .depoimento-single {
     background-color: #2897c3;
 }
 
+section.contato {
+    padding: 60px 2%;
+}
+
+section.contato h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contato form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-wrapper {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.form-wrapper span {
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+.form-wrapper input[type=text], .form-wrapper input[type=email], .form-wrapper input[type=phone] {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 8px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+.form-wrapper textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+
+.form-wrapper button {
+    width: 100px;
+    height: 35px;
+    border: 0;
+    color: white;
+    background-color: #688293;
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-block {
+    display: inline-block;
+    padding: 0 2%;
+}
+
+.footer-block h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.footer-block p {
+    margin-top: 8px;
+    color: white;
+    opacity: 0.48;
+    font-size: 14px;
+}
+
+footer .footer-dev {
+    width: 100%;
+    margin-top: 40px;
+    padding: 25px 2%;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.footer-dev p {
+    color: #343434;
+}
+
+.footer-dev a {
+    color: #71cd29;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 1024px) {
     .img-mosaico-single-social {
         width: calc(100% / 6);
@@ -524,6 +632,15 @@ section.depoimentos .depoimento-single {
     .mosaico-social > div:nth-of-type(1n + 4) {
         display: none;
     }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-block {
+        margin: 30px 0;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -535,6 +652,10 @@ section.depoimentos .depoimento-single {
     section.videos .box-video {
         width: 90%;
         padding-top: calc(90% * 0.6);
+    }
+
+    .w50 {
+        width: 100%;
     }
 }
 

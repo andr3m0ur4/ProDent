@@ -28,7 +28,7 @@ header {
 }
 
 header .container {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -214,7 +214,7 @@ section.perfil-container .texto-perfil h2 {
 
 section.perfil-container .texto-perfil p {
     color: #696969;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -337,6 +337,11 @@ section.depoimentos .depoimento-single {
 
 /** Rede Social **/
 
+section.social {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .instagram-chamada, .facebook-chamada {
     width: 100%;
     text-align: center;
@@ -424,6 +429,7 @@ section.depoimentos .depoimento-single {
 .facebook-chamada {
     background-color: #2897c3;
 }
+ /** Sessão de contato **/
 
 section.contato {
     padding: 60px 2%;
@@ -480,6 +486,10 @@ section.contato form {
     border: 1px solid #dadada;
 }
 
+.form-wrapper input:focus, .form-wrapper textarea:focus {
+    outline: 0;
+}
+
 .form-wrapper button {
     width: 100px;
     height: 35px;
@@ -488,6 +498,8 @@ section.contato form {
     background-color: #688293;
     cursor: pointer;
 }
+
+/** Rodapé **/
 
 footer {
     padding-top: 40px;
@@ -534,6 +546,18 @@ footer .footer-dev {
 }
 
 @media screen and (max-width: 1024px) {
+    header .container {
+        justify-content: space-between;
+    }
+
+    header nav {
+        width: auto;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+    }
+
     .img-mosaico-single-social {
         width: calc(100% / 6);
         padding-top: calc(100% / 6);

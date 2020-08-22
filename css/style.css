@@ -26,6 +26,46 @@ html, body {
 }
 
 /********************************************************************/
+/*********************    Configurações do Slick  *******************/
+/********************************************************************/
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #ccc;
+    border-width: 0;
+    background-color: #ccc;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background-color: #43afda;
+    color: #43afda;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+/********************************************************************/
 /***************************    Cabeçalho do site  ******************/
 /********************************************************************/
 
@@ -67,9 +107,12 @@ header nav a {
 /***************************    Mosaico  ****************************/
 /********************************************************************/
 
+.mosaico .container {
+    display: block;
+}
+
 .mosaico-wrapper {
     width: 100%;
-    display: flex;
 }
 
 .mosaico-single {
@@ -284,11 +327,11 @@ section.tratamentos .container {
 section.tratamentos .tratamento-container {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .tratamento-single {
     padding: 20px;
-    width: 33.3%;
 }
 
 .tratamento-single h2 {
@@ -320,6 +363,7 @@ section.depoimentos > h2 {
 section.depoimentos .container {
     padding: 40px 0;
     max-width: 400px;
+    flex-direction: column;
 }
 
 section.depoimentos .depoimento-single {
@@ -341,6 +385,7 @@ section.depoimentos .depoimento-single {
 .nome-depoimento img {
     width: 32px;
     height: 32px;
+    display: inline-block;
     border-radius: 16px;
 }
 
@@ -670,6 +715,7 @@ footer .footer-dev {
     section.videos .box-video {
         align-self: center;
         width: 70%;
+        margin-top: 30px;
         padding-top: calc(70% * 0.6);
     }
 
